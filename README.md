@@ -2,7 +2,7 @@
 
 Bonjour, 
 
-Voici une page blanche normalisée :white_flag: pour bien commencer un site internet avec des paramètre internet réinitialisés.
+Voici une page blanche normalisée :white_flag: pour bien commencer un site internet avec des paramètres internet réinitialisés.
 
 A bientôt
 
