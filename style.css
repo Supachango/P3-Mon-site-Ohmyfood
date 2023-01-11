@@ -48,6 +48,7 @@
   /**
    * 1. Add the correct box sizing in Firefox.
    * 2. Show the overflow in Edge and IE.
+   ___________________________________________________________"trait horizontal"
    */
   
   hr {
@@ -59,6 +60,7 @@
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
+  ____________________ "préformater du code : montrer qu'on code sur une page web"
    */
   
   pre {
@@ -120,6 +122,8 @@
   /**
    * Prevent `sub` and `sup` elements from affecting the line height in
    * all browsers.
+
+   ____________________________________________________________________exposant
    */
   
   sub,
@@ -347,3 +351,10 @@
   [hidden] {
 	display: none;
   }
+
+  /*==========================================================================*/
+  /*==========================================================================*/
+  /*==========================================================================*/
+
+
+  
