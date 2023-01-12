@@ -351,10 +351,107 @@
   [hidden] {
 	display: none;
   }
+/*________________________________________________________________________________________________________Fin code normalize___*/
+
 
   /*==========================================================================*/
   /*==========================================================================*/
   /*==========================================================================*/
 
+/*______________________________________________________________________________________________________________Code CSS P3___*/
 
+
+/*__________________________________________________________________________________________________________________Polices___*/
+
+@font-face {
+    font-family:'Roboto';
+    src: url('fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family:'Roboto-Thin';
+    src: url('fonts/Roboto/Roboto-Thin.ttf');
+}
+@font-face {
+  font-family:'Roboto-Bold';
+  src: url('fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family:'Shrikhand';
+  src: url('fonts/Shrikhand/Shrikhand-Regular.otf');
+}
+
+p{
+  font-family:'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  }
+
+h2{
+  font-family: 'Roboto-Bold', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3{
+  font-family: 'Roboto-Thin', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+
+
+/*___________________________________________________________________________________________________________________Header___*/
+
+  .fdhblanc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:white;
+    box-shadow: 0px 5px 3px rgb(210, 208, 208);
+  }
+
+  .fdhblanc img{
+    width: 40%;
+    margin: 15px;
+  }
+
+  .fdhgris{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:#eaeaeaff;
+  }
+
+  .fdhgris i{
+    margin-right: 10px;
+  }
+
+  .fdnavgris{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7ff;
+  }
+
+  .fdnavgris h2{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+  }
+
+  .fdnavgris h3{
+    margin-left:10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+
+  .fdnavgris button{
+    margin-bottom: 30px;
+  }
   
