@@ -353,17 +353,17 @@
   [hidden] {
 	display: none;
   }
-/*________________________________________________________________________________________________________Fin code normalize___*/
+/*_________________________________________________________________________________Fin code normalize___*/
 
 
   /*==========================================================================*/
   /*==========================================================================*/
   /*==========================================================================*/
 
-/*______________________________________________________________________________________________________________Code CSS P3___*/
+/*________________________________________________________________________________________Code CSS P3___*/
 
 
-/*__________________________________________________________________________________________________________________Polices___*/
+/*____________________________________________________________________________________________Polices___*/
 
 @font-face {
     font-family:'Roboto';
@@ -383,9 +383,9 @@
   src: url('fonts/Shrikhand/Shrikhand-Regular.otf');
 }
 
-p{
+p, .BtnDeg, .btn{
   font-family:'Roboto', Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   }
 
 h2{
@@ -403,57 +403,164 @@ h3{
 }
 
 
+/*____________________________________________________________________________________________Header___*/
 
-/*___________________________________________________________________________________________________________________Header___*/
+.fdhblanc{
+  display: flex;
+  flex-direction: row;
+  background-color:white;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 0px 5px 3px rgb(210, 208, 208);
+}
+    
 
-  .fdhblanc{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color:white;
-    box-shadow: 0px 5px 3px rgb(210, 208, 208);
-  }
+.fdhblanc img{
+  width: 40%;
+  margin: 15px;
+}
 
-  .fdhblanc img{
-    width: 40%;
-    margin: 15px;
-  }
+.fdhgris{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color:#eaeaeaff;
+}
 
-  .fdhgris{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color:#eaeaeaff;
-  }
+.fdhgris i{
+  margin-right: 10px;
+}
 
-  .fdhgris i{
-    margin-right: 10px;
-  }
+.fdnavgris{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f7f7f7ff;
+}
 
-  .fdnavgris{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #f7f7f7ff;
-  }
+.fdnavgris h2{
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
 
-  .fdnavgris h2{
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-  }
+.fdnavgris h3{
+  margin-left:10%;
+  margin-right: 10%;
+  text-align: center;
+}
 
-  .fdnavgris h3{
-    margin-left:10%;
-    margin-right: 10%;
-    text-align: center;
-  }
+.fdnavgris button{
+  margin-bottom: 30px;
+}
 
-  .fdnavgris button{
-    margin-bottom: 30px;
-  }
+.BtnDeg{
+  display: block;
+  color: #ffff;
+  width: 200px;   
+  height: 45px;
+  background: linear-gradient(#ff79DA, #9656DC);
+  border-radius: 25px 25px 25px 25px; 
+  border-width: 0 0px 0 0;
+  box-shadow: 0px 5px 3px rgb(210, 208, 208)
+} 
+
+.BtnDeg:hover{
+  color: #ffff;
+  width: 200px;   
+  height: 45px;
+  background: linear-gradient(#cd65af, #7d47b7);
+  border-radius: 25px 25px 25px 25px; 
+  border-width: 0 0px 0 0;
+  box-shadow: 0px 3px 2px rgb(210, 208, 208);
+  transition: 0.2s;
+}
+
+
+/*____________________________________________________________________________________________Main___*/
+/*__________________________________________________________________________Section fonctionnement___*/
+
+
+.fdm1blanc{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.fdm1blanc h2{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  margin-top 30px;
+  margin-left: 5%;
+}
+
+#flexbox1{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.cercle {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  color: purple;
+  margin-right: 10px;
+}
+
+.btn{
+  color: black;
+  width: 400px;   
+  height: 45px;
+  background-color: #f7f7f7ff;
+  border-radius: 15px 15px 15px 15px; 
+  border-width: 0 0px 0 0;
+  box-shadow: 0px 5px 3px rgb(210, 208, 208);
+  margin: 5px;
+}
+
+.btn:hover{
+  color: black;
+  width: 400px;   
+  height: 45px;
+  background-color: #f5edffff;
+  border-radius: 15px 15px 15px 15px; 
+  border-width: 0 0px 0 0;
+  box-shadow: 0px 5px 5px rgb(210, 208, 208);
+  margin: 5px;
+  transition: 0.2s;
+}
   
+.port, .list, .store{
+  margin-right: 10px;
+  color: purple;
+}
+
+/*____________________________________________________________________________________________Main___*/
+/*______________________________________________________________________________Section Restaurant___*/
+
+.fdm2gris{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7ff;
+}
+
+
+.fdm2gris h2{
+  justify-content: left;
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 5%;
+}
