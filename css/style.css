@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | githutnde.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -383,23 +383,56 @@
   src: url('fonts/Shrikhand/Shrikhand-Regular.otf');
 }
 
-p, .BtnDeg, .btn{
-  font-family:'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+h1{
+  font-family: 'Shrikhand', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
-  }
+  margin:0px;
+}
 
 h2{
   font-family: 'Roboto-Bold', Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  
+  margin: 0px;
 }
 
 h3{
-  font-family: 'Roboto-Thin', Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: #000000;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+p{font-family:'Roboto-Thin', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+}
+
+ul{
+  margin:0px;
+  padding:0px;
+}
+
+.fdfnoir h1, h3{
+  color: #ffffff;
+  text-align: left;
+  font-weight: 100;
+}
+
+.fdhblanc h3{
+  color:#000000;
+}
+
+.fdhgris h3{
+  color: #000000;
+}
+
+.fdm1blanc h3{
+  color:#000000
+}
+
+.fdm2gris h3{
+  color: #000000;
 }
 
 
@@ -414,9 +447,8 @@ h3{
   box-shadow: 0px 5px 3px rgb(210, 208, 208);
 }
     
-
 .fdhblanc img{
-  width: 40%;
+  width: 175px;
   margin: 15px;
 }
 
@@ -429,9 +461,10 @@ h3{
   background-color:#eaeaeaff;
 }
 
-.fdhgris i{
-  margin-right: 10px;
+.fdhgris h3{
+  margin: 15px;
 }
+
 
 .fdnavgris{
   display: flex;
@@ -444,6 +477,12 @@ h3{
 .fdnavgris h2{
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.fdnavgris p{
+  margin: 15px;
   text-align: center;
 }
 
@@ -451,6 +490,7 @@ h3{
   margin-left:10%;
   margin-right: 10%;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .fdnavgris button{
@@ -458,25 +498,28 @@ h3{
 }
 
 .BtnDeg{
-  display: block;
   color: #ffff;
-  width: 200px;   
+  width: 250px;   
   height: 45px;
   background: linear-gradient(#ff79DA, #9656DC);
   border-radius: 25px 25px 25px 25px; 
   border-width: 0 0px 0 0;
-  box-shadow: 0px 5px 3px rgb(210, 208, 208)
+  box-shadow: 3px 3px 3px #ac7c9d;
+  transition: 0.2s;
 } 
 
 .BtnDeg:hover{
   color: #ffff;
-  width: 200px;   
+  width: 250px;   
   height: 45px;
-  background: linear-gradient(#cd65af, #7d47b7);
+  background: linear-gradient(#fb89db, #a469e7);
   border-radius: 25px 25px 25px 25px; 
   border-width: 0 0px 0 0;
-  box-shadow: 0px 3px 2px rgb(210, 208, 208);
+  box-shadow: 5px 5px 5px #9f6c90;
   transition: 0.2s;
+}
+.BtnDeg h3{
+  margin:10px;
 }
 
 
@@ -496,52 +539,58 @@ h3{
 .fdm1blanc h2{
   display: flex;
   justify-content: left;
-  width: 100%;
-  margin-top 30px;
-  margin-left: 5%;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 #flexbox1{
   display: flex;
   flex-direction: column;
+  width: 90%;
   margin-bottom: 30px;
 }
 
-.cercle {
-  width: 15px;
-  height: 15px;
-  border-radius: 20px;
-  color: purple;
-  margin-right: 10px;
-}
-
 .btn{
-  color: black;
-  width: 400px;   
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  flex-grow: 0.5;
+  color: black;   
   height: 45px;
   background-color: #f7f7f7ff;
   border-radius: 15px 15px 15px 15px; 
   border-width: 0 0px 0 0;
   box-shadow: 0px 5px 3px rgb(210, 208, 208);
-  margin: 5px;
+  margin-left: 8px;
+  margin-bottom: 10px;
 }
-
 .btn:hover{
-  color: black;
-  width: 400px;   
+  color: black;  
   height: 45px;
   background-color: #f5edffff;
   border-radius: 15px 15px 15px 15px; 
   border-width: 0 0px 0 0;
   box-shadow: 0px 5px 5px rgb(210, 208, 208);
-  margin: 5px;
   transition: 0.2s;
 }
-  
-.port, .list, .store{
-  margin-right: 10px;
-  color: purple;
+
+.btn img{
+  width: 18px;
+  height: 18px;
+  position: relative;
+  right:14px;
 }
+.port, .list, .store{
+  margin-right: 25px;
+  margin-left:15px;
+  color:gray;
+}
+
+.store a:hover{
+  margin-right: 25px;
+  margin-left:15px;
+  color:purple;
+} 
 
 /*____________________________________________________________________________________________Main___*/
 /*______________________________________________________________________________Section Restaurant___*/
@@ -553,14 +602,102 @@ h3{
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7ff;
+  width: 100%;
 }
-
-
+#flexbox2{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 30px;
+}
 .fdm2gris h2{
   justify-content: left;
   display: flex;
   justify-content: left;
-  width: 100%;
   margin-top: 30px;
-  margin-left: 5%;
 }
+
+.crd{
+  background-color:white;
+  border-radius: 15px 15px 15px 15px; 
+  box-shadow: 0px 5px 3px rgb(210, 208, 208);
+  margin-left: 0px;
+  margin-right: 0px;
+  position:relative; 
+}
+
+.crd img{
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+figcaption{
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.crd h3, p{
+  margin:5px;
+}
+
+.coeur{
+  position:absolute;
+  right: 5%;
+  top: 81%;
+}
+
+figure a{
+  text-decoration: none;
+}
+
+figure:hover{
+  box-shadow: 0px 6px 4px rgb(134, 133, 133);
+}
+
+/*____________________________________________________________________________________________Footer___*/
+
+.fdfnoir{
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  justify-content: center;
+}
+
+#flexbox3{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+ul i{
+  color:white;
+  margin-right: 10px;
+  font-size: 10px; 
+  /* les icônes sont considérées comme des polices de caratère*/
+}
+
+li{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  align-items: center;
+}
+
+li a{
+  text-decoration: none;
+}
+
+li a:hover {
+  background: #008766ff;
+  color: #99e2d0ff;
+}
+
+
