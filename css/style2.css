@@ -445,7 +445,7 @@ ul{
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 5%;
+  padding: 20px;
   justify-content: center;
 }
     
@@ -464,16 +464,17 @@ ul{
 
 #photosplash{
   display: flex;
-  
 }
 
 #photosplash img{
   width: 100%;
-  max-height: 500px;
-  object-fit:contain;
+  max-height: 200px;
+  object-fit:cover;
 }
 
 /*_______________________________________________________________________________Main->La carte ALF___*/
+
+
 
 .fdmgris{
   width: 100%;
@@ -645,6 +646,14 @@ li a:hover {
 /*__________________________________________________________________________________Version tablette___*/
 
 @media screen and (min-width:580px){
+
+  #photosplash img{
+    width: 100%;
+    max-height: 250px;
+    object-fit:cover;
+    background-position: center 66.66%;
+  }
+
 
 #FlexboxTitréflex{
   display: flex;
