@@ -428,8 +428,6 @@ ul{
 }
 
 
-
-
 /*____________________________________________________________________________________________Header___*/
 
 .fdhblanc{
@@ -473,8 +471,6 @@ ul{
 }
 
 /*_______________________________________________________________________________Main->La carte ALF___*/
-
-
 
 .fdmgris{
   width: 100%;
@@ -523,29 +519,74 @@ h1{
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .brdvert{
  border: 0.1em solid #99e2d0ff;
- width:50px;
+ width: 50px;
  margin-top: 2px;
  margin-bottom: 4px;
 }
-
+/*****************************************************************************animation apparition choix*/
 .crdchoix{
   display: flex;
   flex-direction: column;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   box-shadow: 0px 5px 3px rgb(210, 208, 208);
-  padding:10px;
+  padding: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
-.flexboxcrds{
+@keyframes fadeIn{
+  from {
+      opacity:0;
+      margin-bottom: 4%;
+  }
+  100% {
+      opacity:1;
+      margin-bottom: 2%;
+  }
+}
+.crdchoix:nth-child(1){
+  animation-delay: 200ms;
+}
+.crdchoix:nth-child(2){
+  animation-delay: 400ms;
+}
+.crdchoix:nth-child(3){
+  animation-delay: 600ms;
+}
+.crdchoix :nth-child(4){
+  animation-delay: 800ms;
+}
+.crdchoix :nth-child(5){
+  animation-delay: 1000ms;
+}
+.crdchoix :nth-child(6){
+  animation-delay: 1200ms;
+}
+.crdchoix :nth-child(7){
+  animation-delay: 1400ms;
+}
+.crdchoix :nth-child(8){
+  animation-delay: 1600ms;
+}
+.crdchoix :nth-child(9){
+  animation-delay: 1800ms;
+}
+
+#flexboxcrds{
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
+  opacity: 0;
+  gap: 10px;
 }
 
 .flbxplat{
