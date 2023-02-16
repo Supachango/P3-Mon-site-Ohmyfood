@@ -492,7 +492,7 @@ h1{
   padding-right: 5%; 
 }
 
-/*****************************************************************************animation apparition choix*/
+/*****************************************************************************animation apparition coeur*/
 
 .to-top{
   position: relative;
@@ -564,17 +564,26 @@ h1{
  margin-bottom: 4px;
 }
 /*****************************************************************************animation apparition choix*/
+#flexboxcrds{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  opacity: 0;
+  gap: 10%;
+}
+
 .crdchoix{
   display: flex;
+  height:75px;
   flex-direction: row;
   background-color: white;
   border-radius: 10px 10px 10px 10px;
   margin-bottom: 50px;
   box-shadow: 0px 5px 3px rgb(210, 208, 208);
-  padding: 10px;
   opacity: 0;
   animation: fadeIn 1s ease-in-out;
   animation-fill-mode: forwards;
+  box-sizing: border-box;
 }
 
 @keyframes fadeIn{
@@ -615,22 +624,74 @@ h1{
   animation-delay: 1800ms;
 }
 
-#flexboxcrds{
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  opacity: 0;
-  gap: 10px;
-}
-
 .ColPlat{
   display: flex;
+  width:80%;
+  max-height: 75px;
   flex-direction: column;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   align-items: baseline;
-  justify-content: space-between;
+  box-sizing: content-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-line;
 }
 
 
+.ColPrix {
+  display: flex;
+  width: 20%;
+  height:100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  padding-right: 10px;
+  transition: width 0.3s ease;
+}
+
+.crdchoix:hover .ColPrix {
+  width: calc(50% - 50px);
+}
+
+.ColTic{
+  display: flex;
+  height:100%;
+  transform-origin: 50%;
+  /* pour changer l'origine, le centre de rotation de la div, on ne met pas "center" mais 50% */
+  align-items: center;
+  background-color: lightgreen;
+  width: 0;
+  border-radius: 0px 10px 10px 0px;
+  justify-content: center;
+  transition: width 0.3s ease;
+}
+
+.crdchoix:hover .ColTic{
+  width: 40px;
+}
+
+.ColTic i{
+  font-size: 25px;
+  color:#ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  rotate: 180deg;
+  opacity:0;
+}
+
+.crdchoix:hover .ColTic i{
+  opacity: 1;
+  animation : rolling 0.25s forwards;
+}
+
+@keyframes rolling {
+  0% {transform: rotate(0deg)}
+  /*-----------valeur négative pour faire tourner dans le sens contraire*/
+  50% { transform: rotate(-90deg)}
+  100% {transform: rotate(-180deg)}
+}
 
 /*_______________________________________________________________________________Main->Bouton commande___*/
 
@@ -722,11 +783,11 @@ li a:hover {
 
 @media screen and (min-width:580px){
 
-  #photosplash img{
-    width: 100%;
-    max-height: 250px;
-    object-fit:cover;
-    background-position: center 66.66%;
+#photosplash img{
+  width: 100%;
+  max-height: 250px;
+  object-fit:cover;
+  background-position: center 66.66%;
   }
 
 
@@ -742,7 +803,7 @@ li a:hover {
   flex-direction: row;
   align-items:center;
   justify-content: center;
-  gap: 50px;
+  gap: 10%;
   padding: 10px; 
 }
 
@@ -752,12 +813,5 @@ li a:hover {
   padding: 10px;
   width: 30%;
 }
-
-.flexboxcrds{
-  display: flex;
-  flex-direction: column;
-}
-
-
 
 }

@@ -443,7 +443,19 @@ ul{
   color: #000000;
 }
 /**********************************************************************************animation loading ****/
-/*********************************************************************************animation fond-vert****/
+/*********************************************************************************transition fond-vert****/
+.fd{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #99e2d0ff;
+  opacity:0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1000;
+}
+
 
 .loading {
   position: fixed;
@@ -451,13 +463,12 @@ ul{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #99e2d0ff;
-  opacity: 0.5;
-  animation: fadeOut 5s ease-out forwards;
+  opacity: 0.75;
+  animation: fadein_and_fadeout 3s ease-in-out forwards;
   z-index: 1000;
 }
 
-@keyframes fadeOut {
+@keyframes fadein_and_fadeout {
   0% {
     opacity: 0.50;
     z-index: 100%;
@@ -472,9 +483,12 @@ ul{
   }
   100% {
     opacity: 0;
-    z-index: -1000;
+    z-index: -100;
   }
 }
+
+
+
 /**********************************************************************************animation loading ****/
 /***************************************************************************animation loading spinner****/
 
@@ -524,34 +538,18 @@ ul{
   100% {transform: rotate(-360deg)}
 }
 
-.pink_fork img{
-  height: 20%;
-  width: 20%;
-  position: relative;
-  left:55px;
-}
-
 .fork img{
   height: 20%;
   width: 20%;
   position: relative;
-  right:25px;
-}
-
-.spoon i{
-  font-size: 45px;
-  transform: rotate(-45deg);
-  color: #9656DC;
-  position: relative;
-  right:5px;
+  left:25px;
 }
 
 .knife img{
   height: 20%;
   width: 20%;
   position: relative;
-  left:5px;
-  top: 2px;
+  left:42px;
 }
 
 /*____________________________________________________________________________________________Header___*/
