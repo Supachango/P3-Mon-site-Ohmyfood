@@ -398,9 +398,9 @@ h3{
   font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 11px;
   color: #000000;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin:0px;
   padding: 0px;
+  display: block;
 }
 
 h4{
@@ -425,6 +425,7 @@ h6{
   color: #000000;
   margin-top: 0px;
   margin-bottom: 0px;
+  display: block;
 }
 
 
@@ -645,9 +646,10 @@ h1{
   animation-delay: 1800ms;
 }
 
+/*****************************************************************************Propriété Ellipsis****/
 .ColPlat{
-  display: flex;
-  width: 132px;
+  display: inline-flex;
+  max-width: 165px;
   flex-direction: column;
   overflow: hidden;
   padding-top: 10px;
@@ -655,17 +657,20 @@ h1{
   padding-bottom: 10px;
   align-items: baseline;
   box-sizing: content-box;
-  flex-grow: 3;
+  flex-grow: 2;
 }
 
 .ColPlat h3, h6{
-  display: flex;
-  width: 165px;
+  max-width: 165px;
   overflow: hidden;
   white-space: nowrap;
   word-break: break-all;
   text-overflow: ellipsis;
-  flex-grow: 3;
+}
+
+.ColPlat h3:hover, .ColPlat h6:hover {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ColPrix {
@@ -679,14 +684,14 @@ h1{
   padding-right: 5px;
   transition: width 0.3s ease;
 }
-
+/*********************************************************************************Transition Sliding****/
 .ColTic{
   display: flex;
-  flex-shrink: 1;
   width:30px;
   height:45px;
+  flex-shrink: 1;
   transform-origin: 50%;
-  /* pour changer l'origine, le centre de rotation de la div, on ne met pas "center" mais 50% */
+  /* pour changer l'origine de rotation de la div, on ne met pas "center" mais 50% */
   align-items: center;
   background-color:#99E2D0;
   width: 0;
@@ -705,7 +710,7 @@ h1{
   rotate: 180deg;
   opacity:0;
 }
-/*********************************************************************animation Rolling********/
+/*******************************************************************************animation Rolling********/
 .crdchoix:hover .ColTic i{
   opacity: 1;
   animation : rolling 0.25s forwards;
