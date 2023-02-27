@@ -199,7 +199,6 @@
   [type="reset"],
   [type="submit"] {
 	-webkit-appearance: button;
-  appearance: normal;
   }
   
   /**
@@ -293,7 +292,6 @@
   [type="search"] {
 	-webkit-appearance: textfield; /* 1 */
 	outline-offset: -2px; /* 2 */
-  appearance: normal;
   }
   
   /**
@@ -656,6 +654,8 @@ h1{
   flex-grow: 4;
 }
 
+/*********************************************************************propriété Text-overflow ellipsis*/
+
 .ColPlat h3, h6{
   display: block;
   width: 100%;
@@ -668,7 +668,6 @@ h1{
 
 .ColPrix {
   display: flex;
-  flex-shrink: 1;
   width: 30px;
   height: 45px;
   flex-direction: column;
@@ -680,14 +679,12 @@ h1{
 
 .ColTic{
   display: flex;
-  flex-shrink: 1;
-  width:30px;
+  width: 0;
   height:45px;
   transform-origin: 50%;
   /* pour changer l'origine, le centre de rotation de la div, on ne met pas "center" mais 50% */
   align-items: center;
   background-color:#99E2D0;
-  width: 0;
   border-radius: 0px 10px 10px 0px;
   justify-content: center;
   transition: width 0.3s ease;
@@ -700,7 +697,6 @@ h1{
 .ColTic i{
   font-size: 15px;
   color:#ffffff;
-  rotate: 180deg;
   opacity:0;
 }
 /*********************************************************************animation Rolling********/
@@ -710,10 +706,10 @@ h1{
 }
 
 @keyframes rolling {
-  0% {transform: rotate(0deg)}
+  0% {transform: rotate(180deg)}
   /*-----------valeur négative pour faire tourner dans le sens contraire*/
-  50% { transform: rotate(-90deg)}
-  100% {transform: rotate(-180deg)}
+  50% { transform: rotate(90deg)}
+  100% {transform: rotate(0deg)}
 }
 
 /*_______________________________________________________________________________Main->Bouton commande___*/

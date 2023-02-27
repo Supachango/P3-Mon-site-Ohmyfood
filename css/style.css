@@ -201,7 +201,6 @@
   [type="reset"],
   [type="submit"] {
 	-webkit-appearance: button;
-  appearance: normal;
   }
   
   /**
@@ -295,7 +294,6 @@
   [type="search"] {
 	-webkit-appearance: textfield; /* 1 */
 	outline-offset: -2px; /* 2 */
-  appearance: normal;
   }
   
   /**
@@ -472,15 +470,15 @@ ul{
 @keyframes fadein_and_fadeout {
   0% {
     opacity: 0.50;
-    z-index: 100%;
+    z-index: 100;
   }
   15% {
     opacity: 1;
-    z-index: 100%;
+    z-index: 100;
   }
   99% {
     opacity: 0;
-    z-index: 100%;
+    z-index: 100;
   }
   100% {
     opacity: 0;
